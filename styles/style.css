@@ -1,0 +1,105 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8faff; /* Light grayish-blue background */
+  color: #2d3436; /* Dark gray text for readability */
+}
+
+/* Hero Section Container */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5%;
+  overflow: hidden;
+}
+
+/* Background Pattern 
+   Note: Replace the URL with your specific pattern image or icon grid */
+.background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Hero-bg.png"); /* Placeholder pattern */
+  z-index: -1;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #534fff; /* Purple/Blue accent color */
+  letter-spacing: -1px;
+}
+
+/* Hero Content Area */
+.hero-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  max-width: 900px;
+}
+
+/* Reusable Button Styles */
+.btn {
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #534fff;
+  color: white;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+}
+
+.btn-large {
+  padding: 16px 32px;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(83, 79, 255, 0.3);
+}
+
+/* Hover Effects */
+.btn:hover {
+  background-color: #3f3bc4;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
