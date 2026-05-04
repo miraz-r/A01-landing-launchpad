@@ -97,6 +97,46 @@ body {
   transform: translateY(-2px);
 }
 
+/* This part makes the section take up space and adds the light background */
+.action-section {
+    padding: 100px 5%;
+    background-color: #f4f7ff; 
+}
+
+/* This creates the 'Flex Box' that puts text and image side-by-side */
+.action-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; 
+    gap: 250px; 
+}
+
+/* These ensure both columns take up equal space (50/50) */
+.action-text, .action-image {
+    flex: 1;
+}
+
+/* Simple styling for the heading and paragraph */
+.action-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.action-text p {
+    font-size: 1.2rem;
+    color: #636e72;
+    margin-bottom: 2rem;
+}
+
+/* This makes sure your 'action.png' file fits inside the box and has rounded corners */
+.action-image img {
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero-content h1 {
