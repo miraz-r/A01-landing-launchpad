@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset basic styles */
 * {
   margin: 0;
@@ -421,6 +425,52 @@ body {
   transform: translateY(-2px);
 }
 
+/* Footer section styles */
+.main-footer {
+  padding: 80px 5%;
+  background-color: #fff; /* Keep it clean white */
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 7rem;
+  font-weight: 900;
+  color: #5343ff;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  color: #636e72;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #636e72;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #5343ff;
+}
+
 /* Responsive Design for Mobile Devices  */
 @media (max-width: 768px) {
   /* Rule 1: Shrink Hero Text */
@@ -467,5 +517,19 @@ body {
   .contact-left h1 {
     font-size: 3.5rem;
     text-align: center;
+  }
+
+  /* Rule 7: Adjust Footer */
+  .footer-logo {
+    font-size: 3.5rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .footer-nav {
+    gap: 20px;
   }
 }
