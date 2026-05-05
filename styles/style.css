@@ -332,6 +332,95 @@ body {
   box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact section styles  */
+.contact-section {
+  padding: 100px 5%;
+  background-color: #f8faff;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h1 {
+  font-size: 5rem; /* Big, bold heading */
+  line-height: 1.1;
+  color: #000;
+  font-weight: 800;
+}
+
+.contact-right {
+  flex: 1;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 18px 20px;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #5343ff;
+  box-shadow: 0 0 0 4px rgba(83, 67, 255, 0.1);
+}
+
+.submit-btn {
+  background-color: #5343ff;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #4132e0;
+  transform: translateY(-2px);
+}
+
 /* Responsive Design for Mobile Devices  */
 @media (max-width: 768px) {
   /* Rule 1: Shrink Hero Text */
@@ -368,5 +457,15 @@ body {
 
   .cta-container {
     padding: 40px 20px 40px 20px;
+  }
+  /* Rule 6: Stack Contact Section */
+  .contact-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-left h1 {
+    font-size: 3.5rem;
+    text-align: center;
   }
 }
